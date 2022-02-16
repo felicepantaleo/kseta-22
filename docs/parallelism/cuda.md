@@ -9,15 +9,12 @@ The CUDA Runtime API reference manual is a very useful source of information:
 <a href="http://docs.nvidia.com/cuda/cuda-runtime-api/index.html" target="_blank">http://docs.nvidia.com/cuda/cuda-runtime-api/index.html</a>
 
 ```bash
-$ cd esc21/hands-on/cuda_exercises
+$ cd kseta-22/hands-on/cuda_exercises
 ```
 
 
 Check that your environment is correctly configured to compile CUDA code by running:
 ```bash
-module load compilers/gcc-9.2.0_sl7
-export PATH=/usr/local/cuda-11.2/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda-11.2/lib64:$LD_LIBRARY_PATH
 $ nvcc --version
  nvcc: NVIDIA (R) Cuda compiler driver
  Copyright (c) 2005-2020 NVIDIA Corporation
@@ -28,7 +25,7 @@ $ nvcc --version
 
 Compile and run the `deviceQuery` application:
 ```bash
-cd esc21/hands-on/cuda_exercises/utils/deviceQuery
+cd kseta-22/hands-on/cuda_exercises/utils/deviceQuery
 make
 ```
 
@@ -118,7 +115,7 @@ M is a matrix of NxN integers.
 4. Try with a rectangular matrix 19x67. Hint: check the kernel launch parameters.
 
 
-### Exercise 4. Measuring throughput and profiling with NVVP
+### Exercise 4. Measuring throughput
 The throughput of a kernel can be defined as the number of bytes read and written by a kernel in the unit of time.
 
 The CUDA event API includes calls to create and destroy events, record events, and compute the elapsed time in milliseconds between two recorded events.
@@ -136,9 +133,6 @@ Throughput (GB/s)= Memory_rate(Hz) * memory_interface_width(byte) * 2 /10<sup>9<
 5. NVIDIA Visual Profiler can deliver vital feedback for optimizing your CUDA applications.
 Run it and analyze ex04.
 
-```bash
-nvvp &
-```
 
 ### Exercise 5. Parallel Reduction
 Given an array `a[N]`, the reduction sum `Sum` of a is the sum of all its elements: `Sum=a[0]+a[1]+...a[N-1]`.
