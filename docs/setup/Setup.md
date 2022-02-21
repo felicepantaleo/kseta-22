@@ -32,7 +32,7 @@
     -  ```devel/tbb/2021.4.0```
     - ```devel/cuda/11.4```
 
-![](/home/wahid/Downloads/jupy-modules.gif)
+![](./jupy-modules.gif)
 
 - Now you can open a shell and download the repository for the exercises! 
     - ```git clone https://github.com/felicepantaleo/kseta-22```
