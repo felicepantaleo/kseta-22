@@ -26,14 +26,15 @@ make
 
 You can get some useful information about the features and the limits that you will find on the device you will be running your code on. For example:
 ```
+$ ./deviceQuery 
 ./deviceQuery Starting...
 
  CUDA Device Query (Runtime API) version (CUDART static linking)
 
-Detected 4 CUDA Capable device(s)
+Detected 1 CUDA Capable device(s)
 
 Device 0: "Tesla V100-SXM2-32GB"
-  CUDA Driver Version / Runtime Version          11.2 / 11.2
+  CUDA Driver Version / Runtime Version          11.4 / 11.4
   CUDA Capability Major/Minor version number:    7.0
   Total amount of global memory:                 32510 MBytes (34089730048 bytes)
   (80) Multiprocessors, ( 64) CUDA Cores/MP:     5120 CUDA Cores
@@ -55,8 +56,8 @@ Device 0: "Tesla V100-SXM2-32GB"
   Max dimension size of a grid size    (x,y,z): (2147483647, 65535, 65535)
   Maximum memory pitch:                          2147483647 bytes
   Texture alignment:                             512 bytes
-  Concurrent copy and kernel execution:          Yes with 5 copy engine(s)
-  Run time limit on kernels:                     No
+  Concurrent copy and kernel execution:          Yes with 6 copy engine(s)
+  Run time limit on kernels:                     Yes
   Integrated GPU sharing Host Memory:            No
   Support host page-locked memory mapping:       Yes
   Alignment requirement for Surfaces:            Yes
@@ -66,9 +67,12 @@ Device 0: "Tesla V100-SXM2-32GB"
   Device supports Compute Preemption:            Yes
   Supports Cooperative Kernel Launch:            Yes
   Supports MultiDevice Co-op Kernel Launch:      Yes
-  Device PCI Domain ID / Bus ID / location ID:   0 / 97 / 0
+  Device PCI Domain ID / Bus ID / location ID:   0 / 58 / 0
   Compute Mode:
-     < Exclusive Process (many threads in one process is able to use ::cudaSetDevice() with this device) >
+     < Default (multiple host threads can use ::cudaSetDevice() with device simultaneously) >
+
+deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 11.4, CUDA Runtime Version = 11.4, NumDevs = 1
+Result = PASS
 ```
 
 
