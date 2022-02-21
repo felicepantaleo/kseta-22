@@ -16,11 +16,6 @@ $ cd kseta-22/hands-on/cuda_exercises
 Check that your environment is correctly configured to compile CUDA code by running:
 ```bash
 $ nvcc --version
- nvcc: NVIDIA (R) Cuda compiler driver
- Copyright (c) 2005-2020 NVIDIA Corporation
- Built on Mon_Nov_30_19:08:53_PST_2020
- Cuda compilation tools, release 11.2, V11.2.67
- Build cuda_11.2.r11.2/compiler.29373293_0
 ```
 
 Compile and run the `deviceQuery` application:

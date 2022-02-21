@@ -4,15 +4,7 @@ layout: main
 section: parallelism
 ---
 ### Environment
-Make sure you are using the `gcc 9.2.0`:
-```bash
-$ module load compilers/gcc-9.2.0_sl7
-$ gcc --version
-gcc (GCC) 9.2.0
-Copyright (C) 2019 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-```
+Make sure you are using the correct environment!
 
 ### Hello World
 ```C++
@@ -32,9 +24,9 @@ int main()
 ```
 
 Compile with:
-~~~
+```
 g++ std_threads.cpp -lpthread -o std_threads
-~~~
+```
 
 
 ### Measuring time intervals
@@ -128,7 +120,7 @@ int main()
 
 ### Exercise 3. pi with Montecarlo
 
-![](montecarlo_pi.png){:height="400px" }.
+![](montecarlo_pi.png).
 
 The area of the circle is pi and the area of the square is 4.
 
@@ -140,7 +132,7 @@ If `r < 1`: the point is inside the circle and increase `Nin`.
 
 The ratio between `Nin` and `N` converges to the ratio between the areas.
 
-
+<!-- 
 #### Parallel Algos
 
 ```C++
@@ -165,19 +157,13 @@ int main() {
   // apply a function foo to each element of v 
   std::transform(std::execution::par_unseq, v.begin(), v.end(), output.begin(), foo);
 }
-```
+``` -->
 
 ### Setting the environment for Intel oneTBB
 
-Download and extract the latest release for tbb:
+Check your environment! 
+
 ```bash
-wget https://github.com/oneapi-src/oneTBB/releases/download/v2021.3.0/oneapi-tbb-2021.3.0-lin.tgz
-tar -xzf oneapi-tbb-2021.3.0-lin.tgz 
-```
-Let's now set the environment to use this version of oneTBB.
-```bash
-module load compilers/gcc-9.2.0_sl7
-source oneapi-tbb-2021.3.0/env/vars.sh intel64 linux auto_tbbroot
 echo $TBBROOT
 ```
 
