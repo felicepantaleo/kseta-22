@@ -4,7 +4,7 @@
 
  - With the VPN enabled, ```ssh <username>@uc2.scc.kit.edu```. This is needed to trigger the creation of your home folder.
 
- - Visit https://uc2-jupyter.scc.kit.edu/hub/home , select your organization and login with your credentials. You should see the following page
+ - Visit [https://uc2-jupyter.scc.kit.edu/hub/home](https://uc2-jupyter.scc.kit.edu/hub/home) , select your organization and login with your credentials. You should see the following page
 
  [![start_server.png](start_server.png)](start_server.png)
 
