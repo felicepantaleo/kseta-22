@@ -6,7 +6,7 @@
 
  - Visit https://uc2-jupyter.scc.kit.edu/hub/home , select your organization and login with your credentials. You should see the following page
 
- ![](start_server.png) 
+ ![start_server.png](start_server.png) 
 
  - Click on "Start My Server", you will be redirected to 
 
