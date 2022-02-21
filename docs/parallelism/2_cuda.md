@@ -9,7 +9,7 @@ The CUDA Runtime API reference manual is a very useful source of information:
 <a href="http://docs.nvidia.com/cuda/cuda-runtime-api/index.html" target="_blank">http://docs.nvidia.com/cuda/cuda-runtime-api/index.html</a>
 
 ```bash
-$ cd kseta-22/hands-on/cuda_exercises
+$ cd kseta-22/hands-on/cuda-exercises
 ```
 
 
@@ -20,7 +20,7 @@ $ nvcc --version
 
 Compile and run the `deviceQuery` application:
 ```bash
-cd kseta-22/hands-on/cuda_exercises/utils/deviceQuery
+cd kseta-22/hands-on/cuda-exercises/utils/deviceQuery
 make
 ```
 
