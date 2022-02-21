@@ -28,7 +28,7 @@
 
 [![](jupy_start.png)](jupy_start.png)
 
-- Before doing anything, load the following modules:
+- **Before doing anything**, load the following modules:
     - ``` compiler/gnu/9.3 ```
     -  ```devel/tbb/2021.4.0```
     - ```devel/cuda/11.4```
