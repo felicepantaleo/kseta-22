@@ -1,5 +1,5 @@
 ---
-title: Introduction to CUDA
+title: 2 - Introduction to CUDA
 layout: main
 section: parallelism
 ---
