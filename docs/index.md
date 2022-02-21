@@ -1,6 +1,7 @@
 # Welcome to the Introduction to parallel programming course
 
 The course will take place on:
+
 - [Tuesday 22/02](https://indico.cern.ch/event/1130046/) from 9h00 to 17h00
 - [Friday 25/02](https://indico.cern.ch/event/1130047/) from 9h00 to 17h00
 
