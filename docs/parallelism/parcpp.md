@@ -1,5 +1,5 @@
 ---
-title: Parallel C++ and TBB
+title: 1 - Parallel C++ and TBB
 layout: main
 section: parallelism
 ---
