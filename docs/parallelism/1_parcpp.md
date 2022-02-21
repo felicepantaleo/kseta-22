@@ -132,32 +132,6 @@ If `r < 1`: the point is inside the circle and increase `Nin`.
 
 The ratio between `Nin` and `N` converges to the ratio between the areas.
 
-<!-- 
-#### Parallel Algos
-
-```C++
-#include <vector>
-#include <algorithm>
-#include <execution>
-
-int main() {
-  constexpr int N = 10000;
-  std::vector<int> input;
-  std::vector<int> output;
-  output.resize(N);
-  // fill the vector
-  for (int i = 0; i < N; ++i) {
-   ....
-  }
-  // sort it in parallel
-  std::sort(std::execution::par, v.begin(), v.end());
-
-  auto foo = [](int i) -> int { return i * -2; };
-
-  // apply a function foo to each element of v 
-  std::transform(std::execution::par_unseq, v.begin(), v.end(), output.begin(), foo);
-}
-``` -->
 
 ### Setting the environment for Intel oneTBB
 
