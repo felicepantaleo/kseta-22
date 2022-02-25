@@ -81,6 +81,7 @@ Some of you are sharing the same machine and some time measurements can be influ
 
 ### Exercise 1. CUDA Memory Model
 In this exercise you will learn what heterogeneous memory model means, by demonstrating the difference between host and device memory spaces.
+
 1. Allocate device memory;
 2. Copy the host array h_a to d_a on the device;
 3. Copy the device array d_a to the device array d_b;
@@ -108,6 +109,7 @@ By completing this exercise you will learn how to configure and launch a simple 
 
 ### Exercise 3. Two-dimensional grid
 M is a matrix of NxN integers.
+
 1. Set N=4
 2. Write a kernel that sets each element of the matrix to its linear index (e.g. M[2,3] = 2*N + 3), by making use of two-dimensional grid and blocks. (Two-dimensional means using the x and y coordinates).
 3. Copy the result to the host and check that it is correct.
