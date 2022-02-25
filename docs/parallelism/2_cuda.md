@@ -131,8 +131,6 @@ Throughput (GB/s)= Memory_rate(Hz) * memory_interface_width(byte) * 2 /10<sup>9<
 2. Modify ex04.cu to give the measurement of actual throughput of the kernel.
 3. Measure the throughput with a varying number of elements (in logarithmic scale). Before doing that write down what do you expect (you can also draw a diagram).
 4. What did you find out? Can you give an explanation?
-5. NVIDIA Visual Profiler can deliver vital feedback for optimizing your CUDA applications.
-Run it and analyze ex04.
 
 
 ### Exercise 5. Parallel Reduction
